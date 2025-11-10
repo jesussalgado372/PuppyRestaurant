@@ -4,11 +4,13 @@ body {
   color: #3b2c2c;
   margin: 0;
   padding: 0;
+  background-image: url('/assets/bgtexture.jpg') center/cover no-repeat ;
+  background-attachment: fixed;
 }
 
 /* Navbar */
 .custom-nav {
-  background: url('assets/images/wood-bg.jpg') center/cover no-repeat;
+  background: url('/assets/bgtexture.jpg') center/cover no-repeat;
   padding: 1rem 0;
 }
 
@@ -57,6 +59,31 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
+}
+
+
+.menu-grid{
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr, 1fr,1fr,1fr;
+}
+
+.menu-sandwich{
+    grid-column: 2/3;
+}
+
+.menu-seafood{
+    grid-column: 3/4;
+}
+
+.menu-grill{
+    grid-column: 2/3;
+    grid-row: 2;
+}
+
+.menu-dessert{
+    grid-column: 3/4;
+    grid-row: 2;
 }
 
 /* Responsive */
