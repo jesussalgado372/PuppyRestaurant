@@ -8,7 +8,7 @@ body {
 
 /* Navbar */
 .custom-nav {
-  background: url('assets/images/wood-bg.jpg') center/cover no-repeat;
+  background: url('assets/bgtexture.jpg') center/cover no-repeat;
   padding: 1rem 0;
 }
 
@@ -42,7 +42,7 @@ body {
 
 /* About Section */
 .about {
-  background: #f9f2ec url('assets/images/wood-bg.jpg') repeat;
+  background: #f9f2ec url('/assets/bgtexture.jpg') repeat;
   background-blend-mode: lighten;
 }
 
@@ -74,3 +74,4 @@ p {
     text-align: center;
   }
 }
+
