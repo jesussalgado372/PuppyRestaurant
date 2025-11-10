@@ -1,0 +1,76 @@
+/* Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #3b2c2c;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.custom-nav {
+  background: url('assets/images/wood-bg.jpg') center/cover no-repeat;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-link {
+  color: #5e0b29 !important;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  color: #a01840 !important;
+}
+
+/* Hero */
+.hero {
+  background: url('assets/images/restaurant.jpg') center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+}
+
+/* About Section */
+.about {
+  background: #f9f2ec url('assets/images/wood-bg.jpg') repeat;
+  background-blend-mode: lighten;
+}
+
+.section-title {
+  font-family: 'Righteous', cursive;
+  color: #5e0b29;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    text-align: center;
+  }
+}
