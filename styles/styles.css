@@ -1,0 +1,153 @@
+/* Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #3b2c2c;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+.custom-nav {
+  background: url('/assets/bgtexture.jpg') center/cover no-repeat;
+  padding: 1rem 0;
+}
+
+.logo {
+  height: 50px;
+}
+
+.nav-link {
+  color: #5e0b29 !important;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 1rem;
+}
+
+.nav-link:hover {
+  color: #a01840 !important;
+}
+
+/* Hero */
+.hero {
+  background: url('/assets/bgtexture.jpg') center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.2);
+  height: 100%;
+  width: 100%;
+}
+
+/* About Section */
+.about{
+  background: #f9f2ec url('/assets/bgtexture.jpg') repeat;
+}
+
+.about-navbar{
+    font-family: "fugaz one", sans-serif;
+    font-size: 20px;
+    color: #5e0b29;
+}
+/* Outer white box */
+.about-container {
+  background-color: #fff;
+  width: 950px;
+  height: 675px;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column; /* stacks title on top of paragraph container */
+  align-items: center;    /* center the inner box horizontally */
+  justify-content: flex-start;
+  border-radius: 8px;
+}
+
+/* Title styling */
+.about-section-title {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  color: #5e0b29;
+  font-size: 2.5rem;
+}
+
+/* Inner paragraph box */
+.about-textbox {
+  background-color: #fff;
+  width: 846px;
+  height: 448px;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  overflow-wrap: break-word;
+  border: 2px solid #5e0b29; /* optional border for visibility */
+  border-radius: 6px;
+}
+
+/* Custom font */
+@font-face {
+  font-family: 'MyFont1';
+  src: url('/assets/Montauk-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Paragraph style */
+.about-p {
+  font-size: 1rem;
+  color: #5F002B;
+  font-family: 'MyFont1', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+}
+
+
+/* Make the image and text sit side-by-side */
+.about .row {
+  display: flex;
+  align-items: center;      /* vertically center text with image */
+  justify-content: center;  /* center the whole section horizontally */
+  gap: 2rem;                /* space between image and text */
+  flex-wrap: wrap;          /* allows stacking on small screens */
+  padding: 2rem 0;
+}
+
+/* Control image size */
+.about-img {
+  width: 675px;
+  height: 675px;
+  border-radius: 8px; /* optional, for smoother edges */
+}
+
+/* Style and size the text box */
+.about-container {
+  text-align: left;
+  align-items: flex-start;
+  width: 45%;
+  background-color: #fff;
+  padding: 2rem;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.custom-nav .container-fluid {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero {
+    height: 40vh;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .nav-link {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
