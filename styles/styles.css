@@ -18,8 +18,8 @@ body {
 
 .nav-link {
   color: #5e0b29 !important;
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 200;
+  font-family: "Fugaz One", sans-serif;
   margin-left: 1rem;
 }
 
@@ -46,7 +46,7 @@ body {
 }
 
 .about-navbar{
-    font-family: "fugaz one", sans-serif;
+    font-family: "Fugaz One", sans-serif;
     font-size: 20px;
     color: #5e0b29;
 }
@@ -105,10 +105,10 @@ body {
 /* Make the image and text sit side-by-side */
 .about .row {
   display: flex;
-  align-items: center;      /* vertically center text with image */
-  justify-content: center;  /* center the whole section horizontally */
-  gap: 2rem;                /* space between image and text */
-  flex-wrap: wrap;          /* allows stacking on small screens */
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;                
+  flex-wrap: wrap;          
   padding: 2rem 0;
 }
 
@@ -116,7 +116,7 @@ body {
 .about-img {
   width: 675px;
   height: 675px;
-  border-radius: 8px; /* optional, for smoother edges */
+  border-radius: 0px;
 }
 
 /* Style and size the text box */
@@ -127,10 +127,10 @@ body {
   background-color: #fff;
   padding: 2rem;
   box-sizing: border-box;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 .custom-nav .container-fluid {
-  padding-left: 11rem;
+  padding-left: 13rem;
   padding-right: 11rem;
 }
 
