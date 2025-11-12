@@ -11,6 +11,9 @@ body {
   background: url('/assets/bgtexture.jpg') center/cover no-repeat;
   padding: 1rem 0;
 }
+.navbar-toggler-icon{
+  background-image: url(/assets/MuzzlesLogo.png);
+}
 
 .logo {
   height: 50px;
@@ -97,8 +100,9 @@ body {
   font-size: 1rem;
   color: #5F002B;
   font-family: 'MyFont1', sans-serif;
-  line-height: 1.6;
+  /* line-height: 1.6; */
   margin: 0;
+  
 }
 
 
@@ -106,8 +110,7 @@ body {
 .about .row {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;                
+  justify-content: center;                
   flex-wrap: wrap;          
   padding: 2rem 0;
 }
@@ -133,6 +136,26 @@ body {
   padding-left: 13rem;
   padding-right: 11rem;
 }
+.about-our-team {
+  background-color: #FFFFFF;
+  height: 80px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  /* Match container above */
+  margin-left: 190px;
+  margin-right: 11rem;
+  width: auto;
+}
+.about-card-title{
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+}
+
 
 
 /* Responsive */
