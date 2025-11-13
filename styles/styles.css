@@ -206,6 +206,29 @@ body {
     flex: 1 1 100%;
   }
 }
+/* Stack image above text under 992px */
+@media (max-width: 992px) {
+  .about .row {
+    flex-direction: column; /* stack vertically */
+    align-items: center; /* center the items horizontally */
+  }
+
+  .about-img,
+  .about-container {
+    width: 100%; /* take full width */
+    height: auto; /* let content determine height */
+    margin: 0; /* remove side margins */
+  }
+
+  .about-container {
+    padding: 1.5rem;
+  }
+
+  .about-img {
+    order: -1; /* optional: move image to appear above text */
+  }
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
