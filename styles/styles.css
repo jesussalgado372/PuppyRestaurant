@@ -61,8 +61,8 @@ body {
   box-sizing: border-box;
   padding: 2rem;
   display: flex;
-  flex-direction: column; /* stacks title on top of paragraph container */
-  align-items: center; /* center the inner box horizontally */
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-start;
   border-radius: 0px;
 }
@@ -83,7 +83,7 @@ body {
   box-sizing: border-box;
   padding: 1.5rem;
   overflow-wrap: break-word;
-  border: 2px solid #5e0b29; /* optional border for visibility */
+  border: 2px solid #5e0b29;
   border-radius: 0px;
 }
 
@@ -160,8 +160,8 @@ body {
 .about-cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; /* centers the cards in the row */
-  gap: 1rem; /* spacing between cards */
+  justify-content: center; 
+  gap: 1rem;
   padding: 2rem 0;
   margin-left: 120px;
   margin-right: 120px;
@@ -169,8 +169,8 @@ body {
 
 /* Default card layout (desktop) */
 .about .card {
-  flex: 1 1 calc(33.333% - 2rem); /* 3 cards per row minus gap */
-  max-width: 536px; /* optional limit */
+  flex: 1 1 calc(33.333% - 2rem); 
+  max-width: 536px; 
   box-sizing: border-box;
   background: #fff;
   border: 2px solid #5e0b29;
@@ -209,15 +209,15 @@ body {
 /* Stack image above text under 992px */
 @media (max-width: 992px) {
   .about .row {
-    flex-direction: column; /* stack vertically */
-    align-items: center; /* center the items horizontally */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .about-img,
   .about-container {
-    width: 100%; /* take full width */
-    height: auto; /* let content determine height */
-    margin: 0; /* remove side margins */
+    width: 100%; 
+    height: auto; 
+    margin: 0; 
   }
 
   .about-container {
@@ -225,20 +225,20 @@ body {
   }
 
   .about-img {
-    order: -1; /* optional: move image to appear above text */
+    order: -1;
   }
 }
 /* Left-align navbar toggler under 992px */
 @media (max-width: 992px) {
   .navbar-toggler {
-    margin-left: 1rem; /* optional spacing from the edge */
-    margin-right: auto; /* pushes it to the left */
-    order: -1; /* ensures it appears before logo if needed */
+    margin-left: 1rem; 
+    margin-right: auto; 
+    order: -1; 
   }
 
   .custom-nav .container-fluid {
-    justify-content: flex-start; /* align navbar content to the left */
-    padding-left: 1rem; /* reduce padding for small screens */
+    justify-content: flex-start; 
+    padding-left: 1rem; 
     padding-right: 1rem;
   }
 }
