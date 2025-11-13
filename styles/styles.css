@@ -228,7 +228,20 @@ body {
     order: -1; /* optional: move image to appear above text */
   }
 }
+/* Left-align navbar toggler under 992px */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    margin-left: 1rem; /* optional spacing from the edge */
+    margin-right: auto; /* pushes it to the left */
+    order: -1; /* ensures it appears before logo if needed */
+  }
 
+  .custom-nav .container-fluid {
+    justify-content: flex-start; /* align navbar content to the left */
+    padding-left: 1rem; /* reduce padding for small screens */
+    padding-right: 1rem;
+  }
+}
 
 /* Responsive */
 @media (max-width: 768px) {
