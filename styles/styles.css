@@ -93,7 +93,7 @@ p {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
-}
+} 
 
 
 .menu-grid{
@@ -171,8 +171,39 @@ p {
     object-fit: cover;
     max-width: 100%;
 }
+.menu-p{
+    color: #5F002B !important; 
+}
 
 /* Responsive */
+@media(max-width:990px){
+    .menu-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .menu-sandwich{
+    grid-column: 1/5;
+    background-color: white;
+}
+
+.menu-seafood{
+    grid-column: 1/5;
+    grid-row: 2;
+    background-color: white;
+}
+
+.menu-grill{
+    grid-column: 1/5;
+    grid-row: 3;
+    background-color: white;
+}
+
+.menu-dessert{
+    grid-column: 1/5;
+    grid-row: 4;
+    background-color: white;
+}
+}
 @media (max-width: 768px) {
   .hero {
     height: 40vh;
