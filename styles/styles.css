@@ -29,7 +29,7 @@
 
 /* Base */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #3b2c2c;
   margin: 0;
   padding: 0;
@@ -47,6 +47,9 @@ body {
   background: url('/assets/bgtexture.jpg') center/cover no-repeat;
   padding: 1rem 0;
 }
+.navbar-toggler-icon {
+  background-image: url(/assets/MuzzlesLogo.png);
+}
 
 .logo {
   height: 50px;
@@ -54,8 +57,8 @@ body {
 
 .nav-link {
   color: #5e0b29 !important;
-  font-weight: 600;
-  font-style: italic;
+  font-weight: 200;
+  font-family: "Fugaz One", sans-serif;
   margin-left: 1rem;
 }
 
@@ -65,7 +68,7 @@ body {
 
 /* Hero */
 .hero {
-  background: url('assets/images/restaurant.jpg') center/cover no-repeat;
+  background: url("/assets/bgtexture.jpg") center/cover no-repeat;
   height: 60vh;
   position: relative;
 }
@@ -78,21 +81,202 @@ body {
 
 /* About Section */
 .about {
-  background: #f9f2ec url('assets/images/wood-bg.jpg') repeat;
-  background-blend-mode: lighten;
+  background: #f9f2ec url("/assets/bgtexture.jpg") repeat;
 }
 
-.section-title {
-  font-family: 'Righteous', cursive;
+.about-navbar {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 20px;
   color: #5e0b29;
-  font-size: 2rem;
-  margin-bottom: 1rem;
+}
+/* Outer white box */
+.about-container {
+  background-color: #fff;
+  width: 950px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0px;
 }
 
-p {
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #333;
+/* Title styling */
+.about-section-title {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  color: #5e0b29;
+  font-size: 2.5rem;
+}
+
+/* Inner paragraph box */
+.about-textbox {
+  background-color: #fff;
+  width: 846px;
+  height: 448px;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  overflow-wrap: break-word;
+  border: 2px solid #5e0b29;
+  border-radius: 0px;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "MyFont1";
+  src: url("/assets/Montauk-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Paragraph style */
+.about-p {
+  font-size: 16px;
+  color: #5f002b;
+  font-family: "MyFont1", sans-serif;
+  height: auto;
+  overflow-y: auto;
+}
+
+/* Make the image and text sit side-by-side */
+.about .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+}
+
+/* Control image size */
+.about-img {
+  width: 35%;
+  height: 675px;
+  border-radius: 0px;
+}
+
+/* Style and size the text box */
+.about-container {
+  text-align: left;
+  align-items: flex-start;
+  height: 675px;
+  width: 50%;
+  background-color: #fff;
+  padding: 2rem;
+  overflow: auto;
+  box-sizing: border-box;
+  border-radius: 0px;
+  margin: 10px;
+}
+.custom-nav .container-fluid {
+  padding-left: 13rem;
+  padding-right: 11rem;
+}
+.about-our-team {
+  background-color: #ffffff;
+  height: 80px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  /* Match container above */
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  width: auto;
+}
+.about-card-title {
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+}
+/* Card container uses flexbox */
+.about-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 1rem;
+  padding: 2rem 0;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+/* Default card layout (desktop) */
+.about .card {
+  flex: 1 1 calc(33.333% - 2rem); 
+  max-width: 536px; 
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #5e0b29;
+  border-radius: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Image scaling */
+.about .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+/* Adjust padding inside card */
+.about .card-body {
+  padding: 1.5rem;
+}
+
+/* Tablet breakpoint (2 per row) */
+@media (max-width: 1024px) {
+  .about .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+/* Mobile breakpoint (1 per row) */
+@media (max-width: 768px) {
+  .about .card {
+    flex: 1 1 100%;
+  }
+}
+/* Stack image above text under 992px */
+@media (max-width: 992px) {
+  .about .row {
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  .about-img,
+  .about-container {
+    width: 100%; 
+    height: auto; 
+    margin: 0; 
+  }
+
+  .about-container {
+    padding: 1.5rem;
+  }
+
+  .about-img {
+    order: -1;
+  }
+}
+/* Left-align navbar toggler under 992px */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    margin-left: 1rem; 
+    margin-right: auto; 
+    order: -1; 
+  }
+
+  .custom-nav .container-fluid {
+    justify-content: flex-start; 
+    padding-left: 1rem; 
+    padding-right: 1rem;
+  }
 } 
 
 
