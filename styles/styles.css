@@ -1,6 +1,6 @@
 /* Base */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: #3b2c2c;
   margin: 0;
   padding: 0;
@@ -8,10 +8,10 @@ body {
 
 /* Navbar */
 .custom-nav {
-  background: url('/assets/bgtexture.jpg') center/cover no-repeat;
+  background: url("/assets/bgtexture.jpg") center/cover no-repeat;
   padding: 1rem 0;
 }
-.navbar-toggler-icon{
+.navbar-toggler-icon {
   background-image: url(/assets/MuzzlesLogo.png);
 }
 
@@ -32,7 +32,7 @@ body {
 
 /* Hero */
 .hero {
-  background: url('/assets/bgtexture.jpg') center/cover no-repeat;
+  background: url("/assets/bgtexture.jpg") center/cover no-repeat;
   height: 60vh;
   position: relative;
 }
@@ -44,27 +44,27 @@ body {
 }
 
 /* About Section */
-.about{
-  background: #f9f2ec url('/assets/bgtexture.jpg') repeat;
+.about {
+  background: #f9f2ec url("/assets/bgtexture.jpg") repeat;
 }
 
-.about-navbar{
-    font-family: "Fugaz One", sans-serif;
-    font-size: 20px;
-    color: #5e0b29;
+.about-navbar {
+  font-family: "Fugaz One", sans-serif;
+  font-size: 20px;
+  color: #5e0b29;
 }
 /* Outer white box */
 .about-container {
   background-color: #fff;
   width: 950px;
-  height: 675px;
+  height: auto;
   box-sizing: border-box;
   padding: 2rem;
   display: flex;
   flex-direction: column; /* stacks title on top of paragraph container */
-  align-items: center;    /* center the inner box horizontally */
+  align-items: center; /* center the inner box horizontally */
   justify-content: flex-start;
-  border-radius: 8px;
+  border-radius: 0px;
 }
 
 /* Title styling */
@@ -84,34 +84,32 @@ body {
   padding: 1.5rem;
   overflow-wrap: break-word;
   border: 2px solid #5e0b29; /* optional border for visibility */
-  border-radius: 6px;
+  border-radius: 0px;
 }
 
 /* Custom font */
 @font-face {
-  font-family: 'MyFont1';
-  src: url('/assets/Montauk-Regular.otf') format('opentype');
+  font-family: "MyFont1";
+  src: url("/assets/Montauk-Regular.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 /* Paragraph style */
 .about-p {
-  font-size: 1rem;
-  color: #5F002B;
-  font-family: 'MyFont1', sans-serif;
-  /* line-height: 1.6; */
-  margin: 0;
-  
+  font-size: 16px;
+  color: #5f002b;
+  font-family: "MyFont1", sans-serif;
+  height: auto;
+  overflow-y: auto;
 }
-
 
 /* Make the image and text sit side-by-side */
 .about .row {
   display: flex;
   align-items: center;
-  justify-content: center;                
-  flex-wrap: wrap;          
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 2rem 0;
 }
 
@@ -126,18 +124,21 @@ body {
 .about-container {
   text-align: left;
   align-items: flex-start;
+  height: 675px;
   width: 45%;
   background-color: #fff;
   padding: 2rem;
+  overflow: auto;
   box-sizing: border-box;
   border-radius: 0px;
+  margin: 10px;
 }
 .custom-nav .container-fluid {
   padding-left: 13rem;
   padding-right: 11rem;
 }
 .about-our-team {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   height: 80px;
   box-sizing: border-box;
 
@@ -151,12 +152,58 @@ body {
   margin-right: 11rem;
   width: auto;
 }
-.about-card-title{
+.about-card-title {
   font-family: "Fugaz One", sans-serif;
   color: #5e0b29;
 }
+/* Card container uses flexbox */
+.about-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* centers the cards in the row */
+  gap: 1rem;               /* spacing between cards */
+  padding: 2rem 0;
+}
 
+/* Default card layout (desktop) */
+.about .card {
+  flex: 1 1 calc(33.333% - 2rem); /* 3 cards per row minus gap */
+  max-width: 536px;               /* optional limit */
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #5e0b29;
+  border-radius: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
 
+/* Image scaling */
+.about .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+/* Adjust padding inside card */
+.about .card-body {
+  padding: 1.5rem;
+}
+
+/* Tablet breakpoint (2 per row) */
+@media (max-width: 1024px) {
+  .about .card {
+    flex: 1 1 calc(50% - 2rem);
+  }
+}
+
+/* Mobile breakpoint (1 per row) */
+@media (max-width: 768px) {
+  .about .card {
+    flex: 1 1 100%;
+  }
+}
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -173,4 +220,3 @@ body {
     text-align: center;
   }
 }
-
