@@ -1,12 +1,46 @@
+@font-face {
+    font-family: 'Montauk';
+    src: url(../assets/Montauk-Bold.otf);
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Montauk';
+    src: url(../assets/Montauk-Italic.otf);
+    font-style: italic;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family:'Montauk' ;
+    src:url(../assets/Montauk-Light.otf);
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-family:'Montauk';
+    src: url(../assets/Montauk-Regular.otf);
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
 /* Base */
 body {
   font-family: 'Poppins', sans-serif;
   color: #3b2c2c;
   margin: 0;
   padding: 0;
-  background-image: url('/assets/bgtexture.jpg') center/cover no-repeat ;
-  background-attachment: fixed;
 }
+
+body {
+    background-image: url('/assets/bgtexture.jpg') ;
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+  }
 
 /* Navbar */
 .custom-nav {
@@ -70,20 +104,72 @@ p {
 
 .menu-sandwich{
     grid-column: 2/3;
+    background-color: white;
 }
 
 .menu-seafood{
     grid-column: 3/4;
+    background-color: white;
 }
 
 .menu-grill{
     grid-column: 2/3;
     grid-row: 2;
+    background-color: white;
 }
 
 .menu-dessert{
     grid-column: 3/4;
     grid-row: 2;
+    background-color: white;
+}
+
+.menu-bg-white{
+    background-color: white;
+}
+
+.menu-bold{
+    font-family: 'Montauk',sans-serif;
+    font-weight: bold;
+}
+
+.menu-ital{
+    font-family: 'Montauk',sans-serif;
+    font-style: italic;
+}
+
+.menu-light{
+    font-family: 'Montauk',sans-serif;
+    font-weight: lighter;
+}
+
+.menu-reg{
+    font-family: 'Montauk',sans-serif;
+}
+
+.menu-fugaz {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: #5F002B;
+}
+
+.menu-color{
+    color: #5F002B !important; 
+}
+
+.menu-row{
+    flex-direction: row !important;
+
+}
+
+.cate-center{
+    justify-items: center;
+}
+
+.cate-cover{
+    object-fit: cover;
+    max-width: 100%;
 }
 
 /* Responsive */
