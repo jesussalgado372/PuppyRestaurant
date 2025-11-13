@@ -115,7 +115,7 @@ body {
 
 /* Control image size */
 .about-img {
-  width: 675px;
+  width: 35%;
   height: 675px;
   border-radius: 0px;
 }
@@ -125,7 +125,7 @@ body {
   text-align: left;
   align-items: flex-start;
   height: 675px;
-  width: 45%;
+  width: 50%;
   background-color: #fff;
   padding: 2rem;
   overflow: auto;
@@ -148,8 +148,8 @@ body {
   align-items: center;
 
   /* Match container above */
-  margin-left: 190px;
-  margin-right: 11rem;
+  margin-left: 6.5%;
+  margin-right: 6.5%;
   width: auto;
 }
 .about-card-title {
@@ -161,14 +161,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* centers the cards in the row */
-  gap: 1rem;               /* spacing between cards */
+  gap: 1rem; /* spacing between cards */
   padding: 2rem 0;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 /* Default card layout (desktop) */
 .about .card {
   flex: 1 1 calc(33.333% - 2rem); /* 3 cards per row minus gap */
-  max-width: 536px;               /* optional limit */
+  max-width: 536px; /* optional limit */
   box-sizing: border-box;
   background: #fff;
   border: 2px solid #5e0b29;
