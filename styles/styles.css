@@ -138,35 +138,63 @@ body {
   overflow-y: auto;
 }
 
-/* Make the image and text sit side-by-side */
+/* Default / Desktop & Tablet (above 768px) */
+/* Parent flex container */
 .about .row {
   display: flex;
-  align-items: center;
+  align-items: stretch;     /* stretch children to the same height */
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem 0;
+  gap: 1rem;
 }
 
-/* Control image size */
+/* Image */
 .about-img {
   width: 35%;
-  height: 675px;
-  border-radius: 0px;
+  /* Make height flexible so it can stretch, but limit max */
+  height: auto;
+  min-height: 0;            /* allow shrinking/growth in flex context */
+  border-radius: 0;
+  /* Give it the same flex behavior as the container */
+  flex: 0 1 35%;
 }
 
-/* Style and size the text box */
+/* Text container */
 .about-container {
-  text-align: left;
-  align-items: flex-start;
-  height: 675px;
   width: 50%;
-  background-color: #fff;
+  flex: 0 1 50%;
+  min-height: 0;            /* allow it to shrink/grow from flex */
   padding: 2rem;
-  overflow: auto;
   box-sizing: border-box;
-  border-radius: 0px;
-  margin: 10px;
+  overflow: auto;
 }
+
+
+/* Mobile / Small Screens: 768px and below */
+@media (max-width: 768px) {
+  .about .row {
+    flex-direction: column;   /* stack items vertically */
+    align-items: center;      /* center the items horizontally */
+  }
+
+  .about-img,
+  .about-container {
+    width: 100%;               /* full width when stacked */
+    height: auto;              /* allow natural height */
+  }
+
+  .about-img {
+    order: -1;                 /* put the image before the container in the stacking order */
+    margin-bottom: 1rem;       /* space between image and text container */
+  }
+
+  .about-container {
+    padding: 1.5rem;            /* reduce padding for smaller screens */
+    text-align: center;         /* optional: center text on mobile */
+  }
+}
+
 .custom-nav .container-fluid {
   padding-left: 13rem;
   padding-right: 11rem;
