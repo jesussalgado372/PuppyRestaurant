@@ -53,7 +53,7 @@ body {
   height: 50px;
 }
 
-.nav-link {
+.custom-nav .navbar-nav .nav-link {
   color: #5e0b29 !important;
   font-weight: 200;
   font-family: "Fugaz One", sans-serif;
@@ -400,6 +400,26 @@ body {
 }
 
 /* Photo Styling */
+.photos-header {
+  background-color: #ffffff;
+  height: 80px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  /* Match container above */
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  width: auto;
+}
+.photos-title {
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+  font-weight: 500;
+}
 .photos-img {
   width: 100%;
   height: auto;
@@ -428,4 +448,3 @@ body {
   border: 10px solid #fff;   /* 10px white border */
   box-sizing: border-box;    /* ensures border doesn’t break the layout */
 }
-
