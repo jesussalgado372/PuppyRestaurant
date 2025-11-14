@@ -745,3 +745,12 @@ body {
         height: 32px;
     }
 }
+
+.mi-i {
+    padding-left: 50px !important;
+    padding-right: 50px !important;
+}
+
+.mi-2 {
+    justify-content: space-between;
+}
