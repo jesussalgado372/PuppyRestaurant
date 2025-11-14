@@ -1,14 +1,198 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Photos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="/styles/styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>About</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/styles.css" />
   </head>
   <body>
-    <h1>Hello, world!</h1>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <!-- NavBar -->
+    <nav class="navbar custom-nav navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/index.html">
+          <img
+            src="/assets/MuzzlesLogo.png"
+            class="d-none d-lg-block"
+            alt="logo"
+            width="250px"
+            height="92px"
+          />
+        </a>
+        <div class="d-flex justify-content-start w-100">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav text-right ms-auto">
+            <li class="nav-item">
+              <a class="nav-link d-lg-none" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/About.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Menu.html">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Catering.html">Catering</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/Photo.html">Photo</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Photo Header -->
+    <div class="photos-header">
+      <h1 class="photos-title">Photos</h1>
+    </div>
+
+    <!-- Container for photos -->
+    <div class="photos-container">
+      <div class="photos-rows">
+        <div class="photos-col">
+          <img
+            src="/assets/photo01.jpg"
+            alt="medium rare steak"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo02.jpg"
+            alt="doggo getting his dinner"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo03.jpg"
+            alt="Yummy dessert"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo04.jpg"
+            alt="dog licking the plate"
+            class="photos-img"
+          />
+        </div>
+      </div>
+      <div class="photos-rows">
+        <div class="photos-col">
+          <img
+            src="/assets/photo05.jpg"
+            alt="Shrimp Skewers"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo06.jpg"
+            alt="food on a platter"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo07.jpg"
+            alt="pups eating a loaf of bread"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo08.jpg"
+            alt="delicious looking rack of ribs"
+            class="photos-img"
+          />
+        </div>
+      </div>
+      <div class="photos-rows">
+        <div class="photos-col">
+          <img
+            src="/assets/photo09.jpg"
+            alt="Fried fish on a platter"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo10.jpg"
+            alt="Brownies topped with vanilla ice cream and chocolate sauce"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo11.jpg"
+            alt="puppy trying to eat a sandwich"
+            class="photos-img"
+          />
+        </div>
+        <div class="photos-col">
+          <img
+            src="/assets/photo12.jpg"
+            alt="salmon on a plank"
+            class="photos-img"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Desktop Footer (shown >768px) -->
+    <div class="footer-container desktop-footer">
+      <div class="footer-content">
+        <div class="left-footer">
+          <p class="footer-p">1357 Mutt Street, Rottweiler CA. 12345</p>
+          <p class="footer-p">Phone: 123-456-7890</p>
+        </div>
+        <div class="right-footer">
+          <img
+            src="/assets/CompanyLogo.png"
+            alt="Company logo"
+            class="footer-img"
+          />
+          <p class="footer-p">Copyright © Muzzles Restaurant</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Footer (shown <768px) -->
+    <div class="footer-container mobile-footer justify-content-center">
+      <img
+        src="/assets/CompanyLogo.png"
+        alt="Company logo"
+        class="footer-img"
+      />
+      <p class="footer-p">1357 Mutt Street, Rottweiler CA. 12345</p>
+      <p class="footer-p">Phone: 123-456-7890</p>
+      <p class="footer-p">Copyright © Muzzles Restaurant</p>
+    </div>
   </body>
 </html>
