@@ -281,6 +281,8 @@ body {
   display: grid;
   gap: 15px;
   grid-template-columns: 1fr, 1fr, 1fr, 1fr;
+  margin-left: 8rem !important;
+  margin-right: 8rem !important;
 }
 
 .menu-sandwich{
@@ -360,14 +362,39 @@ body {
   object-fit: cover;
 }
 .menu-p{
-    color: #5F002B !important; 
+    font-size: 15px !important; 
+    margin-bottom: 0;
 }
 
 .menu-center{
   text-align: center;
 }
 
+.menu-light{
+  font-weight: 100 !important;
+}
+
+.menu-our{
+  margin-left: 8rem !important;
+  margin-right: 8rem !important;
+ 
+}
+
+.menu-a{
+  font-size: 50px ;
+}
+
 /* Responsive */
+@media (max-width: 1110px){
+  .menu-grid{
+    margin-left: 3rem !important;
+  margin-right: 3rem !important;
+  }
+  .menu-our{
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
+}
+}
 @media (max-width: 990px) {
   .menu-grid {
     grid-template-columns: 1fr;
@@ -409,6 +436,26 @@ body {
     margin-left: 0;
     text-align: center;
   }
+
+  
+}
+@media (max-width: 600px){
+  .menu-row{
+    flex-direction: column !important;
+  }
+  .menu-a{
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px){
+  .menu-grid{
+    margin-left: 1rem !important;
+  margin-right: 1rem !important;
+  }
+  .menu-our{
+  margin-left:1rem !important;
+  margin-right: 1rem !important;
+}
 }
 
 /* Photo Styling */
