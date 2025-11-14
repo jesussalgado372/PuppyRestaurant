@@ -448,3 +448,32 @@ body {
   border: 10px solid #fff;   /* 10px white border */
   box-sizing: border-box;    /* ensures border doesn’t break the layout */
 }
+
+
+/* foooter styles */
+.footer-container {
+  width: 100%;
+  padding: 0 140px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-p {
+  font-size: 16px;
+  color: #5f002b;
+  font-family: "MyFont1", sans-serif;
+  margin: 0;
+}
+
+.right-footer {
+  text-align: right;
+}
+
+.footer-img{
+  height: 32px;
+}
