@@ -5,14 +5,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muzzles Restaurant</title>
+
     <link rel="stylesheet" href="./styles/styles.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 </head>
 
 <body>
-    <!-- Header -->
-    <header class=>
-        <div class="container d-flex justify-content-between align-items-center">
+
+    <!-- HEADER -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center py-3">
             <img src="assets/MuzzlesLogo.png" alt="Muzzles Logo" class="logo" />
             <nav>
                 <ul class="nav">
@@ -23,67 +25,70 @@
                 </ul>
             </nav>
         </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav text-right ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link d-lg-none" href="/index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/About.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/Menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/Catering.html">Catering</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/Photo.html">Photo</a>
-                </li>
-            </ul>
-        </div>
-        </div>
-        </nav>
-        <!-- Hero Section -->
-        <section class="hero">
-            <img src="assets/homeHero.jpg" alt="Restaurant Hero" class="img-fluid w-100" />
-        </section>
-        <!-- Main Content -->
-        <main class="container my-5">
-            <<<<<<< HEAD <div class="row align-items-center mb-4">
-                <div class="col-md-6">
-                    <h1 class="fw-bold">Muzzles Grill & Restaurant</h1>
+    </header>
+
+    <!-- HERO IMAGE -->
+    <img src="assets/homeHero.jpg" alt="Restaurant Hero" class="img-fluid w-100 " />
+
+
+    <!-- MAIN SECTION -->
+    <main class="container my-5">
+
+        <div class="row g-5 align-items-start">
+
+            <!-- LEFT LARGE IMAGE -->
+            <div class="col-md-5">
+                <img src="assets/homeSingle.jpg" alt="Main Dish" class="cate-fit" height="100%" />
+            </div>
+
+            <!-- WHITE TEXT BOX + SINGLE LARGE BOTTOM IMAGE -->
+            <div class="col-md-6" height="100%">
+                <div class=" bg-white">
+
+                    <h1 class="fw-bold text-danger">Muzzles Sandwiches & Grill</h1>
+
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
                         in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
+
+                    <!-- ONE WIDE IMAGE (looks like 3) -->
+
+                    <img src="assets/Homeimage.jpg" class="index-fit m-0" width="100%" alt="Wide Collage Image" />
+
+
                 </div>
-                <div class="col-md-6 text-center">
-                    <img src="assets/homeSingle.jpg" alt="Muzzles Dish" class="img-fluid rounded" />
-                </div>
-                =======
-                <div class="row align-items-center mb-4">
-                    <div class="col-md-6">
-                        <h1 class="fw-bold">Muzzles Grill & Restaurant</h1>
-                        <p>
-                            Welcome to Muzzles, where great food meets great company! Enjoy freshly grilled dishes, vibrant flavors, and a cozy atmosphere. Whether you’re stopping by for a quick bite or celebrating with friends, Muzzles brings warmth and taste to every plate.
-                        </p>
-                        >>>>>>> f6780836c44ed192755e0e1bdcae1eb15df09a23
-                    </div>
-                    <div class="col-md-6 text-center">
-                        <img src="assets/homeSingle.jpg" alt="Muzzles Dish" class="img-fluid rounded" />
-                    </div>
-                </div>
-                <div class="text-center mt-5">
-                    <img src="assets/Homeimage.jpg" alt="Restaurant Interior" class="img-fluid rounded shadow" />
-                </div>
-        </main>
-        <!-- Footer -->
-        <footer class="text-center py-4 bg-light mt-5">
-            <<<<<<< HEAD <small>1357 Mutt Street, Rottweiler CA. 12345 Phone: 123-456-7890</small>
-                =======
-                <small>© 2025 Muzzles Restaurant. All rights reserved.</small> >>>>>>> f6780836c44ed192755e0e1bdcae1eb15df09a23
-        </footer>
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTERS -->
+
+    <!-- DESKTOP FOOTER -->
+    <div class="footer-container desktop-footer">
+        <div class="footer-content">
+            <div class="left-footer">
+                <p class="footer-p">1357 Mutt Street, Rottweiler CA. 12345</p>
+                <p class="footer-p">Phone: 123-456-7890</p>
+            </div>
+            <div class="right-footer">
+                <img src="assets/CompanyLogo.png" alt="Company logo" class="footer-img" />
+                <p class="footer-p">Copyright © Muzzles Restaurant</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- MOBILE FOOTER -->
+    <div class="footer-container mobile-footer justify-content-center">
+        <img src="assets/CompanyLogo.png" alt="Company logo" class="footer-img" />
+        <p class="footer-p">1357 Mutt Street, Rottweiler CA. 12345</p>
+        <p class="footer-p">Phone: 123-456-7890</p>
+        <p class="footer-p">Copyright © Muzzles Restaurant</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
