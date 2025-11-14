@@ -507,3 +507,136 @@ body {
   border: 10px solid #fff;   /* 10px white border */
   box-sizing: border-box;    /* ensures border doesn’t break the layout */
 }
+
+
+/* foooter styles */
+.footer-container {
+  width: 100%;
+  padding: 0 140px;
+  margin-top: 50px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-p {
+  font-size: 16px;
+  color: #5f002b;
+  font-family: "MyFont1", sans-serif;
+  margin: 0;
+}
+
+.right-footer {
+  text-align: right;
+}
+
+.footer-img{
+  height: 32px;
+}
+
+/* ============ 1200px and down ============ */
+@media (max-width: 1200px) {
+  .footer-container,
+  .photos-container {
+    padding: 0 80px;          /* reduced from 140px */
+    max-width: calc(100% - 160px);
+  }
+}
+
+/* ============ 992px and down (tablet) ============ */
+@media (max-width: 992px) {
+  .photos-rows {
+    flex-wrap: wrap;          /* allows Break into 2x2 grid */
+  }
+
+  .photos-col {
+    flex: 0 0 48%;            /* two columns */
+  }
+
+  .footer-container {
+    padding: 0 50px;
+  }
+}
+
+/* ============ 768px and down (large mobile) ============ */
+@media (max-width: 768px) {
+  .photos-col {
+    flex: 0 0 100%;           /* one column */
+  }
+
+  .footer-content {
+    flex-direction: column;   /* stack footer content */
+    text-align: center;
+    gap: 12px;
+  }
+
+  .right-footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    padding: 0 30px;
+  }
+}
+
+/* ============ 576px and down (small mobile) ============ */
+@media (max-width: 576px) {
+  .photos-header {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .photos-container {
+    padding: 0 20px;
+  }
+
+  .footer-container {
+    padding: 0 20px;
+  }
+}
+/* Hide mobile footer by default */
+.mobile-footer {
+  display: none;
+}
+
+/* Desktop footer styling stays the same */
+.desktop-footer {
+  display: block;
+}
+
+/* Mobile Footer for <768px */
+@media (max-width: 768px) {
+
+  /* Hide desktop footer */
+  .desktop-footer {
+    display: none;
+  }
+
+  /* Show mobile footer */
+  .mobile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Ensure spacing from edges */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 100%;  /* prevents shifting */
+    gap: 12px;        /* space between elements */
+    box-sizing: border-box;  /* includes padding in width */
+  }
+
+  /* Keep logo small */
+  .mobile-footer .footer-img {
+    height: 32px;
+  }
+}
+
+
+
