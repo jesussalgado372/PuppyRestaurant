@@ -107,6 +107,7 @@ body {
 /* Outer white box */
 
 .about-container {
+<<<<<<< HEAD
     background-color: #fff;
     width: 950px;
     height: auto;
@@ -261,6 +262,220 @@ body {
     object-fit: cover;
     border-radius: 0px;
 }
+=======
+  background-color: #fff;
+  width: 950px;
+  height: auto;
+  box-sizing: border-box;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0px;
+}
+
+/* Title styling */
+.about-section-title {
+  font-family: "Fugaz One", sans-serif;
+  font-weight: 400;
+  color: #5e0b29;
+  font-size: 2.5rem;
+}
+
+/* Inner paragraph box */
+.about-textbox {
+  background-color: #fff;
+  width: 846px;
+  height: 448px;
+  box-sizing: border-box;
+  padding: 1.5rem;
+  overflow-wrap: break-word;
+  border: 2px solid #5e0b29;
+  border-radius: 0px;
+}
+
+/* Custom font */
+@font-face {
+  font-family: "MyFont1";
+  src: url("/assets/Montauk-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Paragraph style */
+.about-p {
+  font-size: 16px;
+  color: #5f002b;
+  font-family: "MyFont1", sans-serif;
+  height: auto;
+  overflow-y: auto;
+}
+
+/* Parent flex container */
+.about .row {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 2rem 0;
+  gap: 1rem;
+}
+
+/* Image */
+.about-img {
+  width: 35%;
+  height: auto;
+  min-height: 0;
+  border-radius: 0;
+  flex: 0 1 35%;
+}
+
+/* Text container */
+.about-container {
+  width: 50%;
+  flex: 0 1 50%;
+  min-height: 0;
+  padding: 2rem;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+/* Mobile / Small Screens: 768px and below */
+@media (max-width: 768px) {
+  .about .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-img,
+  .about-container {
+    width: 100%;
+    height: auto;
+  }
+
+  .about-img {
+    order: -1;
+    margin-bottom: 1rem;
+  }
+
+  .about-container {
+    padding: 1.5rem;
+    text-align: center;
+  }
+}
+
+.custom-nav .container-fluid {
+  padding-left: 13rem;
+  padding-right: 11rem;
+}
+.about-our-team {
+  background-color: #ffffff;
+  height: 80px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  /* Match container above */
+  margin-left: 6.5%;
+  margin-right: 6.5%;
+  width: auto;
+}
+.about-card-title {
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+}
+/* Card container uses flexbox */
+.about-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 2rem 0;
+  margin: 0 6.5%;
+  box-sizing: border-box;
+}
+
+.about .card {
+  flex: 0 1 calc(100% - 2rem);
+  min-width: 0;
+  box-sizing: border-box;
+  background: #fff;
+  border: 2px solid #5e0b29;
+  border-radius: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+/* Image scaling */
+.about .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 0px;
+}
+
+/* Adjust padding inside card */
+.about .card-body {
+  padding: 1.5rem;
+}
+
+/* Tablet (2 per row) */
+@media (max-width: 1024px) {
+  .about .card {
+    flex: 0 1 calc(50% - 2rem);
+  }
+}
+
+/* Desktop (3 per row)*/
+@media (min-width: 1025px) {
+  .about .card {
+    flex: 0 1 calc(33.333% - 2rem);
+  }
+}
+
+/* Card images scale naturally */
+.about .card-img-top {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Card body */
+.about .card-body {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+/* At 768px and below: 1 card per row */
+@media (max-width: 768px) {
+  .about-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about .card {
+    flex: 0 1 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Left-align navbar toggler under 992px */
+@media (max-width: 992px) {
+  .navbar-toggler {
+    margin-left: 1rem;
+    margin-right: auto;
+    order: -1;
+  }
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 
 
 /* Adjust padding inside card */
@@ -334,6 +549,7 @@ body {
 }
 
 .menu-sandwich {
+<<<<<<< HEAD
     grid-column: 1/2;
     background-color: white;
 }
@@ -353,6 +569,27 @@ body {
     grid-column: 2/3;
     grid-row: 2;
     background-color: white;
+=======
+  grid-column: 1/2;
+  background-color: white;
+}
+
+.menu-seafood {
+  grid-column: 2/3;
+  background-color: white;
+}
+
+.menu-grill {
+  grid-column: 1/2;
+  grid-row: 2;
+  background-color: white;
+}
+
+.menu-dessert {
+  grid-column: 2/3;
+  grid-row: 2;
+  background-color: white;
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .menu-bg-white {
@@ -390,8 +627,13 @@ body {
 }
 
 .menu-row {
+<<<<<<< HEAD
     flex-direction: row !important;
     justify-content: space-around;
+=======
+  flex-direction: row !important;
+  justify-content: space-around;
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .cate-center {
@@ -404,6 +646,7 @@ body {
 }
 
 .cate-fit {
+<<<<<<< HEAD
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -429,10 +672,37 @@ body {
 
 .menu-a {
     font-size: 50px;
+=======
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.menu-p {
+  font-size: 15px !important;
+  margin-bottom: 0;
+}
+
+.menu-center {
+  text-align: center;
+}
+
+.menu-light {
+  font-weight: 100 !important;
+}
+
+.menu-our {
+  margin-left: 8rem !important;
+  margin-right: 8rem !important;
+}
+
+.menu-a {
+  font-size: 50px;
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 
 /* Responsive */
+<<<<<<< HEAD
 
 @media (max-width: 1110px) {
     .menu-grid {
@@ -443,6 +713,17 @@ body {
         margin-left: 3rem !important;
         margin-right: 3rem !important;
     }
+=======
+@media (max-width: 1110px) {
+  .menu-grid {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+  .menu-our {
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+  }
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 @media (max-width: 990px) {
@@ -492,6 +773,7 @@ body {
     }
 }
 
+<<<<<<< HEAD
 @media (max-width: 500px) {
     .menu-grid {
         margin-left: 1rem !important;
@@ -503,10 +785,36 @@ body {
     }
 }
 
+=======
+  .nav-link {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .menu-row {
+    flex-direction: column !important;
+  }
+  .menu-a {
+    font-size: 30px;
+  }
+}
+@media (max-width: 500px) {
+  .menu-grid {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+  .menu-our {
+    margin-left: 1rem !important;
+    margin-right: 1rem !important;
+  }
+}
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 
 /* Photo Styling */
 
 .photos-header {
+<<<<<<< HEAD
     background-color: #ffffff;
     height: 80px;
     box-sizing: border-box;
@@ -518,9 +826,25 @@ body {
     margin-left: 7.5%;
     margin-right: 7.5%;
     width: auto;
+=======
+  background-color: #ffffff;
+  height: auto;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  /* Match container above */
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  width: auto;
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .photos-title {
+<<<<<<< HEAD
     font-family: "Fugaz One", sans-serif;
     color: #5e0b29;
     font-weight: 500;
@@ -529,9 +853,20 @@ body {
 .photos-img {
     width: 100%;
     height: auto;
+=======
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+  font-weight: 500;
+  margin-top: 10px;
+}
+.photos-img {
+  width: 100%;
+  height: auto;
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .photos-container {
+<<<<<<< HEAD
     max-width: calc(100% - 280px);
     /* 140px left + 140px right */
     margin: 0 auto;
@@ -559,8 +894,30 @@ body {
     /* 10px white border */
     box-sizing: border-box;
     /* ensures border doesn’t break the layout */
+=======
+  max-width: calc(100% - 280px);
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
+.photos-rows {
+  padding-top: 18px;
+  display: flex;
+  gap: 8px;
+}
+
+.photos-col {
+  flex: 1;
+}
+
+.photos-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 10px solid #fff;
+  box-sizing: border-box;
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
+}
 
 /* foooter styles */
 
@@ -588,25 +945,38 @@ body {
 }
 
 .footer-img {
+<<<<<<< HEAD
     height: 32px;
+=======
+  height: 32px;
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 
 /* ============ 1200px and down ============ */
 
 @media (max-width: 1200px) {
+<<<<<<< HEAD
     .footer-container,
     .photos-container {
         padding: 0 80px;
         /* reduced from 140px */
         max-width: calc(100% - 160px);
     }
+=======
+  .footer-container,
+  .photos-container {
+    padding: 0 80px;
+    max-width: calc(100% - 160px);
+  }
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 
 /* ============ 992px and down (tablet) ============ */
 
 @media (max-width: 992px) {
+<<<<<<< HEAD
     .photos-rows {
         flex-wrap: wrap;
         /* allows Break into 2x2 grid */
@@ -618,12 +988,26 @@ body {
     .footer-container {
         padding: 0 50px;
     }
+=======
+  .photos-rows {
+    flex-wrap: wrap;
+  }
+
+  .photos-col {
+    flex: 0 0 48%;
+  }
+
+  .footer-container {
+    padding: 0 50px;
+  }
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 
 /* ============ 768px and down (large mobile) ============ */
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
     .photos-col {
         flex: 0 0 100%;
         /* one column */
@@ -640,6 +1024,25 @@ body {
     .footer-container {
         padding: 0 30px;
     }
+=======
+  .photos-col {
+    flex: 0 0 100%;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .right-footer {
+    text-align: center;
+  }
+
+  .footer-container {
+    padding: 0 30px;
+  }
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 
@@ -676,6 +1079,7 @@ body {
 /* Mobile Footer for <768px */
 
 @media (max-width: 768px) {
+<<<<<<< HEAD
     /* Hide desktop footer */
     .desktop-footer {
         display: none;
@@ -703,3 +1107,31 @@ body {
         height: 32px;
     }
 }
+=======
+  .desktop-footer {
+    display: none;
+  }
+
+  /* Show mobile footer */
+  .mobile-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* Ensure spacing from edges */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    margin: 0 auto;
+    max-width: 100%; 
+    gap: 12px; 
+    box-sizing: border-box; 
+  }
+
+  /* Keep logo small */
+  .mobile-footer .footer-img {
+    height: 32px;
+  }
+}
+>>>>>>> 579bfc3ebfdef1503839676b6818f9a95033f32a
