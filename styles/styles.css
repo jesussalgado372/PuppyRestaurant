@@ -416,7 +416,7 @@ body {
 /* Photo Styling */
 .photos-header {
   background-color: #ffffff;
-  height: 80px;
+  height: auto;
   box-sizing: border-box;
 
   display: flex;
@@ -433,6 +433,7 @@ body {
   font-family: "Fugaz One", sans-serif;
   color: #5e0b29;
   font-weight: 500;
+  margin-top: 10px;
 }
 .photos-img {
   width: 100%;
