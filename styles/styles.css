@@ -564,100 +564,53 @@ margin-right: 1rem !important;
 
 
 /* Photo Styling */
-
 .photos-header {
-    background-color: #ffffff;
-    height: 80px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    text-align: center !important;
-    align-items: center;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    width: auto;
-    background-color: #ffffff;
-    height: auto;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    text-align: center !important;
-    align-items: center;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-    width: auto;
-}
-
-.photos-title {
-  font-family: "Fugaz One", sans-serif;
-  color: #5e0b29;
-  font-weight: 500;
-}
-
-.photos-img {
-  width: 100%;
+  background-color: #ffffff;
   height: auto;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  /* Match container above */
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  width: auto;
+}
+.photos-title {
   font-family: "Fugaz One", sans-serif;
   color: #5e0b29;
   font-weight: 500;
   margin-top: 10px;
 }
-
 .photos-img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
-
 .photos-container {
   max-width: calc(100% - 280px);
-    /* 140px left + 140px right */
-    margin: 0 auto;
-    /* centers it */
-    padding-top: 30px;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 
 .photos-rows {
-    padding-top: 18px;
-    display: flex;
-    gap: 8px;
-    /* small spacing between items */
+  padding-top: 18px;
+  display: flex;
+  gap: 8px;
 }
 
 .photos-col {
-    flex: 1;
-    /* 4 equal columns */
+  flex: 1;
 }
 
 .photos-col img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 10px solid #fff;
-    /* 10px white border */
-    box-sizing: border-box;
-    /* ensures border doesn’t break the layout */
-    max-width: calc(100% - 280px);
-    margin: 0 auto;
-    padding-top: 30px;
-}
-
-.photos-rows {
-    padding-top: 18px;
-    display: flex;
-    gap: 8px;
-}
-
-.photos-col {
-    flex: 1;
-}
-
-.photos-col img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border: 10px solid #fff;
-    box-sizing: border-box;
-
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 10px solid #fff;
+  box-sizing: border-box;
 }
 
 
