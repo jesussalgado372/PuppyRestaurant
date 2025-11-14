@@ -1,31 +1,29 @@
 @font-face {
-    font-family: 'Montauk';
-    src: url(../assets/Montauk-Bold.otf);
-    font-style: normal;
-    font-weight: 700;
+  font-family: "Montauk";
+  src: url(../assets/Montauk-Bold.otf);
+  font-style: normal;
+  font-weight: 700;
 }
 
 @font-face {
-    font-family: 'Montauk';
-    src: url(../assets/Montauk-Italic.otf);
-    font-style: italic;
-    font-weight: 400;
+  font-family: "Montauk";
+  src: url(../assets/Montauk-Italic.otf);
+  font-style: italic;
+  font-weight: 400;
 }
 
 @font-face {
-    font-family:'Montauk' ;
-    src:url(../assets/Montauk-Light.otf);
-    font-style: normal;
-    font-weight: 300;
+  font-family: "Montauk";
+  src: url(../assets/Montauk-Light.otf);
+  font-style: normal;
+  font-weight: 300;
 }
 @font-face {
-    font-family:'Montauk';
-    src: url(../assets/Montauk-Regular.otf);
-    font-style: normal;
-    font-weight: 400;
+  font-family: "Montauk";
+  src: url(../assets/Montauk-Regular.otf);
+  font-style: normal;
+  font-weight: 400;
 }
-
-
 
 /* Base */
 body {
@@ -36,15 +34,15 @@ body {
 }
 
 body {
-    background-image: url('/assets/bgtexture.jpg') ;
-    background-repeat: no-repeat; 
-    background-size: cover; 
-    background-position: center; 
-  }
+  background-image: url("/assets/bgtexture.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
 
 /* Navbar */
 .custom-nav {
-  background: url('/assets/bgtexture.jpg') center/cover no-repeat;
+  background: url("/assets/bgtexture.jpg") center/cover no-repeat;
   padding: 1rem 0;
 }
 .navbar-toggler-icon {
@@ -55,7 +53,7 @@ body {
   height: 50px;
 }
 
-.nav-link {
+.custom-nav .navbar-nav .nav-link {
   color: #5e0b29 !important;
   font-weight: 200;
   font-family: "Fugaz One", sans-serif;
@@ -196,7 +194,7 @@ body {
 .about-cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; 
+  justify-content: center;
   gap: 1rem;
   padding: 2rem 0;
   margin-left: 120px;
@@ -205,8 +203,8 @@ body {
 
 /* Default card layout (desktop) */
 .about .card {
-  flex: 1 1 calc(33.333% - 2rem); 
-  max-width: 536px; 
+  flex: 1 1 calc(33.333% - 2rem);
+  max-width: 536px;
   box-sizing: border-box;
   background: #fff;
   border: 2px solid #5e0b29;
@@ -245,15 +243,15 @@ body {
 /* Stack image above text under 992px */
 @media (max-width: 992px) {
   .about .row {
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
   }
 
   .about-img,
   .about-container {
-    width: 100%; 
-    height: auto; 
-    margin: 0; 
+    width: 100%;
+    height: auto;
+    margin: 0;
   }
 
   .about-container {
@@ -267,126 +265,124 @@ body {
 /* Left-align navbar toggler under 992px */
 @media (max-width: 992px) {
   .navbar-toggler {
-    margin-left: 1rem; 
-    margin-right: auto; 
-    order: -1; 
+    margin-left: 1rem;
+    margin-right: auto;
+    order: -1;
   }
 
   .custom-nav .container-fluid {
-    justify-content: flex-start; 
-    padding-left: 1rem; 
+    justify-content: flex-start;
+    padding-left: 1rem;
     padding-right: 1rem;
   }
-} 
-
-
-.menu-grid{
-    display: grid;
-    gap: 15px;
-    grid-template-columns: 1fr, 1fr,1fr,1fr;
 }
 
-.menu-sandwich{
-    grid-column: 2/3;
-    background-color: white;
+.menu-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr, 1fr, 1fr, 1fr;
 }
 
-.menu-seafood{
-    grid-column: 3/4;
-    background-color: white;
+.menu-sandwich {
+  grid-column: 2/3;
+  background-color: white;
 }
 
-.menu-grill{
-    grid-column: 2/3;
-    grid-row: 2;
-    background-color: white;
+.menu-seafood {
+  grid-column: 3/4;
+  background-color: white;
 }
 
-.menu-dessert{
-    grid-column: 3/4;
-    grid-row: 2;
-    background-color: white;
+.menu-grill {
+  grid-column: 2/3;
+  grid-row: 2;
+  background-color: white;
 }
 
-.menu-bg-white{
-    background-color: white;
+.menu-dessert {
+  grid-column: 3/4;
+  grid-row: 2;
+  background-color: white;
 }
 
-.menu-bold{
-    font-family: 'Montauk',sans-serif;
-    font-weight: bold;
+.menu-bg-white {
+  background-color: white;
 }
 
-.menu-ital{
-    font-family: 'Montauk',sans-serif;
-    font-style: italic;
+.menu-bold {
+  font-family: "Montauk", sans-serif;
+  font-weight: bold;
 }
 
-.menu-light{
-    font-family: 'Montauk',sans-serif;
-    font-weight: lighter;
+.menu-ital {
+  font-family: "Montauk", sans-serif;
+  font-style: italic;
 }
 
-.menu-reg{
-    font-family: 'Montauk',sans-serif;
+.menu-light {
+  font-family: "Montauk", sans-serif;
+  font-weight: lighter;
+}
+
+.menu-reg {
+  font-family: "Montauk", sans-serif;
 }
 
 .menu-fugaz {
   font-family: "Fugaz One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  color: #5F002B;
+  color: #5f002b;
 }
 
-.menu-color{
-    color: #5F002B !important; 
+.menu-color {
+  color: #5f002b !important;
 }
 
-.menu-row{
-    flex-direction: row !important;
-
+.menu-row {
+  flex-direction: row !important;
 }
 
-.cate-center{
-    justify-items: center;
+.cate-center {
+  justify-items: center;
 }
 
-.cate-cover{
-    object-fit: cover;
-    max-width: 100%;
+.cate-cover {
+  object-fit: cover;
+  max-width: 100%;
 }
-.menu-p{
-    color: #5F002B !important; 
+.menu-p {
+  color: #5f002b !important;
 }
 
 /* Responsive */
-@media(max-width:990px){
-    .menu-grid{
-        grid-template-columns: 1fr;
-    }
+@media (max-width: 990px) {
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .menu-sandwich{
+  .menu-sandwich {
     grid-column: 1/5;
     background-color: white;
-}
+  }
 
-.menu-seafood{
+  .menu-seafood {
     grid-column: 1/5;
     grid-row: 2;
     background-color: white;
-}
+  }
 
-.menu-grill{
+  .menu-grill {
     grid-column: 1/5;
     grid-row: 3;
     background-color: white;
-}
+  }
 
-.menu-dessert{
+  .menu-dessert {
     grid-column: 1/5;
     grid-row: 4;
     background-color: white;
-}
+  }
 }
 @media (max-width: 768px) {
   .hero {
@@ -401,4 +397,54 @@ body {
     margin-left: 0;
     text-align: center;
   }
+}
+
+/* Photo Styling */
+.photos-header {
+  background-color: #ffffff;
+  height: 80px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: center;
+  text-align: center !important;
+  align-items: center;
+
+  /* Match container above */
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  width: auto;
+}
+.photos-title {
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+  font-weight: 500;
+}
+.photos-img {
+  width: 100%;
+  height: auto;
+
+}
+.photos-container {
+  max-width: calc(100% - 280px); /* 140px left + 140px right */
+  margin: 0 auto; /* centers it */
+  padding-top: 30px;
+}
+
+.photos-rows {
+  padding-top: 18px;
+  display: flex;
+  gap: 8px; /* small spacing between items */
+}
+
+.photos-col {
+  flex: 1; /* 4 equal columns */
+}
+
+.photos-col img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: 10px solid #fff;   /* 10px white border */
+  box-sizing: border-box;    /* ensures border doesn’t break the layout */
 }
