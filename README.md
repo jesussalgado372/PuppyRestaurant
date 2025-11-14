@@ -18,4 +18,15 @@ Your Project must be fully responsive and each member of the team must submit th
 
 You can add multiple dates with description.
 
-Person Review: 
+Person Review: Jose Martinez
+Page: index.html background patter is not showing up. Only shows white background. Nav menu does not match color or text size from prototype
+footer does not match prototype. Responsiveness looks good.
+
+Page: About.html looks good on large size. on 1024X1200 Laptop L 1440px first image looks squished. Mobile view cards are to long. Iphone 12 Pro
+
+Page: Catering.html background image patter not showing up. Its only white background. Missing footer, and missing responsiveness
+
+Page Photo.html ..... ?????? no content at all. What is going on here? I am kind worried here on this one.
+
+Please let me know if you have any questions. 
+
