@@ -12,7 +12,7 @@
     font-weight: 400;
 }
 
-@ @font-face {
+@font-face {
     font-family: "Montauk";
     src: url(../assets/Montauk-Light.otf);
     font-style: normal;
@@ -334,7 +334,7 @@ body {
 }
 
 .menu-sandwich {
-    <<<<<<< HEAD grid-column: 1/2;
+    grid-column: 1/2;
     background-color: white;
 }
 
@@ -353,7 +353,7 @@ body {
     grid-column: 2/3;
     grid-row: 2;
     background-color: white;
-    =======grid-column: 1/2;
+    grid-column: 1/2;
     background-color: white;
 }
 
@@ -372,7 +372,6 @@ body {
     grid-column: 2/3;
     grid-row: 2;
     background-color: white;
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .menu-bg-white {
@@ -410,11 +409,10 @@ body {
 }
 
 .menu-row {
-    <<<<<<< HEAD flex-direction: row !important;
+    flex-direction: row !important;
     justify-content: space-around;
-    =======flex-direction: row !important;
+    flex-direction: row !important;
     justify-content: space-around;
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .cate-center {
@@ -427,7 +425,7 @@ body {
 }
 
 .cate-fit {
-    <<<<<<< HEAD width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -452,7 +450,7 @@ body {
 
 .menu-a {
     font-size: 50px;
-    =======width: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -477,13 +475,13 @@ body {
 
 .menu-a {
     font-size: 50px;
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
+
 }
 
 
 /* Responsive */
 
-<<<<<<< HEAD @media (max-width: 1110px) {
+@media (max-width: 1110px) {
     .menu-grid {
         margin-left: 3rem !important;
         margin-right: 3rem !important;
@@ -492,7 +490,7 @@ body {
         margin-left: 3rem !important;
         margin-right: 3rem !important;
     }
-    =======@media (max-width: 1110px) {
+  @media (max-width: 1110px) {
         .menu-grid {
             margin-left: 3rem !important;
             margin-right: 3rem !important;
@@ -501,7 +499,7 @@ body {
             margin-left: 3rem !important;
             margin-right: 3rem !important;
         }
-        >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
+
     }
     @media (max-width: 990px) {
         .menu-grid {
@@ -547,7 +545,7 @@ body {
             font-size: 30px;
         }
     }
-    <<<<<<< HEAD @media (max-width: 500px) {
+@media (max-width: 500px) {
         .menu-grid {
             margin-left: 1rem !important;
             margin-right: 1rem !important;
@@ -557,7 +555,7 @@ body {
             margin-right: 1rem !important;
         }
     }
-    =======.nav-link {
+.nav-link {
         margin-left: 0;
         text-align: center;
     }
@@ -583,58 +581,54 @@ body {
     }
 }
 
->>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
+
 /* Photo Styling */
 
 .photos-header {
-    <<<<<<< HEAD background-color: #ffffff;
+    background-color: #ffffff;
     height: 80px;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     text-align: center !important;
     align-items: center;
-    /* Match container above */
     margin-left: 7.5%;
     margin-right: 7.5%;
     width: auto;
-    =======background-color: #ffffff;
+    background-color: #ffffff;
     height: auto;
     box-sizing: border-box;
     display: flex;
     justify-content: center;
     text-align: center !important;
     align-items: center;
-    /* Match container above */
     margin-left: 7.5%;
     margin-right: 7.5%;
     width: auto;
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .photos-title {
-    <<<<<<< HEAD font-family: "Fugaz One", sans-serif;
-    color: #5e0b29;
-    font-weight: 500;
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+  font-weight: 500;
+}
+
+.photos-img {
+  width: 100%;
+  height: auto;
+  font-family: "Fugaz One", sans-serif;
+  color: #5e0b29;
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 .photos-img {
     width: 100%;
     height: auto;
-    =======font-family: "Fugaz One", sans-serif;
-    color: #5e0b29;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
-.photos-img {
-    width: 100%;
-    height: auto;
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 .photos-container {
-    <<<<<<< HEAD max-width: calc(100% - 280px);
+  max-width: calc(100% - 280px);
     /* 140px left + 140px right */
     margin: 0 auto;
     /* centers it */
@@ -661,7 +655,7 @@ body {
     /* 10px white border */
     box-sizing: border-box;
     /* ensures border doesn’t break the layout */
-    =======max-width: calc(100% - 280px);
+    max-width: calc(100% - 280px);
     margin: 0 auto;
     padding-top: 30px;
 }
@@ -682,7 +676,7 @@ body {
     display: block;
     border: 10px solid #fff;
     box-sizing: border-box;
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
+
 }
 
 
@@ -712,77 +706,60 @@ body {
 }
 
 .footer-img {
-    <<<<<<< HEAD height: 32px;
-    =======height: 32px;
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
+  height: 32px;
+  height: 32px;
+
 }
 
 
 /* ============ 1200px and down ============ */
 
 @media (max-width: 1200px) {
-    <<<<<<< HEAD .footer-container,
-    .photos-container {
+.footer-container,
+.photos-container {
         padding: 0 80px;
         /* reduced from 140px */
         max-width: calc(100% - 160px);
     }
-    =======.footer-container,
+.footer-container,
     .photos-container {
         padding: 0 80px;
         max-width: calc(100% - 160px);
     }
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
 }
 
 
 /* ============ 992px and down (tablet) ============ */
 
 @media (max-width: 992px) {
-    <<<<<<< HEAD .photos-rows {
+.photos-rows {
         flex-wrap: wrap;
         /* allows Break into 2x2 grid */
     }
-    .photos-col {
+.photos-col {
         flex: 0 0 48%;
         /* two columns */
     }
-    .footer-container {
+.footer-container {
         padding: 0 50px;
     }
-    =======.photos-rows {
+.photos-rows {
         flex-wrap: wrap;
     }
-    .photos-col {
+.photos-col {
         flex: 0 0 48%;
     }
-    .footer-container {
+.footer-container {
         padding: 0 50px;
     }
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
+
 }
 
 
 /* ============ 768px and down (large mobile) ============ */
 
 @media (max-width: 768px) {
-    <<<<<<< HEAD .photos-col {
-        flex: 0 0 100%;
-        /* one column */
-    }
-    .footer-content {
-        flex-direction: column;
-        /* stack footer content */
-        text-align: center;
-        gap: 12px;
-    }
-    .right-footer {
-        text-align: center;
-    }
-    .footer-container {
-        padding: 0 30px;
-    }
-    =======.photos-col {
+  .photos-col {
         flex: 0 0 100%;
     }
     .footer-content {
@@ -796,7 +773,21 @@ body {
     .footer-container {
         padding: 0 30px;
     }
-    >>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
+.photos-col {
+        flex: 0 0 100%;
+    }
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .right-footer {
+        text-align: center;
+    }
+    .footer-container {
+        padding: 0 30px;
+    }
+
 }
 
 
@@ -833,7 +824,6 @@ body {
 /* Mobile Footer for <768px */
 
 @media (max-width: 768px) {
-    <<<<<<< HEAD
     /* Hide desktop footer */
     .desktop-footer {
         display: none;
@@ -862,7 +852,7 @@ body {
     }
 }
 
-=======.desktop-footer {
+.desktop-footer {
     display: none;
 }
 
@@ -892,5 +882,3 @@ body {
 }
 
 
-}
->>>>>>>579bfc3ebfdef1503839676b6818f9a95033f32a
